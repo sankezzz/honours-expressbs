@@ -10,13 +10,13 @@ app.post('/user', (req, res, next) => {
 });
 
 app.get('/', (req, res, next) => {
-  console.log('Received request');
+  console.log('Received request');          //after submit the next page will be /user
   console.log(req.method, req.url);
   res.send(`
   <html>
   <head><title>My Server</title></head>
   <body>
-    <form action="/user" method="POST">
+    <form action="/user" method="POST">    
       <label for="name">Name:</label>
       <input type="text" name="name">
       <button type="submit">Submit</button>

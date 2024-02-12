@@ -20,7 +20,7 @@ const server = http.createServer((req, res) => {
     });
 
   } else {
-    res.setHeader('Content-Type', 'text/html');
+    res.setHeader('Content-Type', 'text/html'); //yaha text ka type set ho jata hai html
 
     res.end(`
       <html>
